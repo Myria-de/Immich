@@ -1,4 +1,4 @@
-# Install script Ubuntu 24.04 and Linux Mint 22
+# Install script Ubuntu 20.04/24.04 and Linux Mint 21.3/22
 # Add Docker's official GPG key:
 CURUSER=$USER
 sudo apt update
