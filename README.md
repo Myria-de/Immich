@@ -35,7 +35,7 @@ Einen dynamischen Domainnamen erhalten Fritzbox-Besitzer über den AVM-Dienst My
 
 Unter „Internet -> Freigaben“ legen Sie die Portweiterleitung auf den Server im lokalen Netzwerk fest. Es genügt, die Ports 80 und 443 zu konfigurieren, wenn der Nginx Proxy Manager zum Einsatz kommt. Darüber kann man auch ein kostenloses SSL-Zertifikat von Letsencrypt beziehen.
 
-Auch andere Router-Hersteller bieten oft einen eigenen Dienst für dynamische Domainnamen an. Wenn nicht, lässt sich in der Regel beispielsweise https://www.noip.com konfigurieren.
+Auch andere Router-Hersteller bieten oft einen eigenen Dienst für dynamische Domainnamen an. Wenn nicht, lässt sich in der Regel beispielsweise https://www.noip.com oder https://freedns.afraid.org konfigurieren.
 
 **Nginx Proxy Manager konfigurieren:** 
 Mit Nginx Proxy Manager können Sie den Port von Docker-Webanwendungen dem lokalen Hostnamen oder eine über das Internet erreichbare Domain zuordnen.
