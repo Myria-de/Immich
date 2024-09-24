@@ -40,19 +40,20 @@ Auch andere Router-Hersteller bieten oft einen eigenen Dienst für dynamische Do
 **Nginx Proxy Manager einrichten:** 
 Mit Nginx Proxy Manager können Sie den Port von Docker-Webanwendungen dem lokalen Hostnamen oder eine über das Internet erreichbare Domain zuordnen.
 
-**Schritt 1:** Klicken Sie auf „Add Custom Template“. Für den Nginx Proxy Manager tragen Sie in die Felder hinter „Title“ und „Description“ jeweils npm ein.
+**Schritt 1:** Klicken Sie auf „Add Custom Template“. Für den Nginx Proxy Manager tragen Sie in die Felder hinter „Title“ und „Description“ jeweils *npm* ein.
 
 **Schritt 2:** Gehen Sie auf https://m6u.de/DOCK, klicken Sie auf „NPM-Dockerfile“ und dann auf der rechten Seite auf „Copy raw file“ (das Icon hinter „Raw“).
 
 **Schritt 3:** Zurück in Portainer fügen Sie den Inhalt mit Strg-V in den Eingabebereich unter „Web editor“ ein. Die Konfiguration enthält Definitionen für das Docker-Netzwerk „npm“, über das Nginx Proxy Manager später auf Anwendungen in anderen Containern zugreifen kann.
 
 **Schritt 4:** Klicken Sie unter „Custom Templates“ auf „npm“ und danach auf „Deploy the stack“.
+
 Öffnen Sie http://localhost:81 im Browser und melden Sie sich mit der E-Mail-Adresse *admin@example.com* und dem Passwort *changeme* an. Danach öffnet sich ein Fenster, in das Sie den gewünschten Benutzernamen und eine E-Mail-Adresse eintragen. Nach einem Klick auf „Save“ legen Sie ein neues Passwort fest.
 
 **Nginx Proxy Manager konfigurieren:** 
 Gehen Sie in Nginx Proxy Manager auf „Hosts -> Proxy Hosts“ und klicken Sie auf „Add Proxy Host“. Unter „Domain Names“ tragen Sie die für das heimische Netzwerk konfigurierte Domain für dynamisches IP (siehe https://www.pcwelt.de/1150123). Unter „Forward Hostname / IP“ tragen Sie die IP-Adresse Ihres Linux-PCs ein und unter „Forward Port“ den Port des Immich-Docker-Containers (*2283*). Für Immich aktivieren Sie "Websockets-Support". Anschließend klicken Sie auf „Save“.
 
-Gehen Sie im Drei-Punkte-Menü auf der rechten Seite auf „Edit“. Wechelsn Sie auf „SSL“ und aktivieren Sie „Force SSL“. Klicken Sie auf „Save“. Es wird ein kostenloses SSL-Zertifikat von Let's Encrypt angefordert. Die SSL-Zertifikate können Sie unter "SSL Certificates" verwalten.
+Gehen Sie im Drei-Punkte-Menü auf der rechten Seite auf „Edit“. Wechseln Sie auf „SSL“ und aktivieren Sie „Force SSL“. Klicken Sie auf „Save“. Es wird ein kostenloses SSL-Zertifikat von Let's Encrypt angefordert. Die SSL-Zertifikate können Sie unter "SSL Certificates" verwalten.
 
 Im Browser lässt ich Immich jetzt über den konfigurierten Host- oder Domainnamen ohne zusätzliche Port-Angabe aufrufen und konfigurieren.
 
